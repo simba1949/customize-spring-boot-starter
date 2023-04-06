@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  top.simba1949.customize.auto.CustomizeServiceAutoConfiguration

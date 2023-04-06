@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>top.simba1949</groupId>
+    <artifactId>customize-spring-boot-starter-autoconfigure</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--
+        Inherit defaults from Spring Boot
+        参考链接：https://docs.spring.io/spring-boot/docs/2.7.9/maven-plugin/reference/htmlsingle/#using
+        Maven 用户可以从 spring-boot-starter-parent 项目继承以获得合理的默认值。父项目提供以下功能：
+            1.Java 1.8 是默认的编译器级别。
+            2.UTF-8 源编码。
+            3.从 spring-boot-dependencies POM 继承的依赖性管理部分，用于管理常见依赖性的版本。
+            4.具有执行ID 的 repackage 目标的 repackage 执行。
+    -->
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.9</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
